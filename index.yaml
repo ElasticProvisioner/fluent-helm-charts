@@ -4,6 +4,37 @@ entries:
   - annotations:
       artifacthub.io/changes: |
         - kind: changed
+          description: "Updated Fluent Bit OCI image to v3.1.0."
+    apiVersion: v1
+    appVersion: 3.1.0
+    created: "2024-07-10T16:58:21.448766362Z"
+    description: Fast and lightweight log processor and forwarder or Linux, OSX and
+      BSD family operating systems.
+    digest: 896213f89ddb306d908f7a3ba6eab6e4fbcaa09b905cbe4959ed7709fe9dd8a4
+    home: https://fluentbit.io/
+    icon: https://raw.githubusercontent.com/cncf/artwork/master/projects/fluentd/fluentbit/icon/fluentbit-icon-color.svg
+    keywords:
+    - logging
+    - fluent-bit
+    - fluentd
+    maintainers:
+    - email: eduardo@calyptia.com
+      name: edsiper
+    - email: naseem@transit.app
+      name: naseemkullah
+    - email: towmeykaw@gmail.com
+      name: Towmeykaw
+    - email: steve.hipwell@gmail.com
+      name: stevehipwell
+    name: fluent-bit
+    sources:
+    - https://github.com/fluent/fluent-bit/
+    urls:
+    - https://github.com/AsherBond/fluent-helm-charts/releases/download/fluent-bit-0.47.0/fluent-bit-0.47.0.tgz
+    version: 0.47.0
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
           description: "Updated Fluent Bit OCI image to v3.0.7."
     apiVersion: v1
     appVersion: 3.0.7
@@ -4655,6 +4686,37 @@ entries:
     version: 0.1.0
   fluent-operator:
   - apiVersion: v2
+    appVersion: 3.0.0
+    created: "2024-07-10T16:58:21.573766585Z"
+    dependencies:
+    - condition: fluentbit.crdsEnable
+      name: fluent-bit-crds
+      repository: file://charts/fluent-bit-crds
+      version: 3.0.0
+    - condition: fluentd.crdsEnable
+      name: fluentd-crds
+      repository: file://charts/fluentd-crds
+      version: 3.0.0
+    description: Fluent Operator provides great flexibility in building a logging
+      layer based on Fluent Bit and Fluentd.
+    digest: f20ac33fbb0366c78ff7b54d2af5f108bde3044a262089b4ecd32bd374d18f5d
+    home: https://www.fluentd.org/
+    icon: https://raw.githubusercontent.com/fluent/fluent-operator/master/docs/images/fluent-operator-icon.svg
+    keywords:
+    - logging
+    - fluent-bit
+    - fluentd
+    - operator
+    maintainers:
+    - email: dehaocheng@kubesphere.io
+      name: wenchajun
+    name: fluent-operator
+    sources:
+    - https://github.com/fluent/fluent-operator
+    urls:
+    - https://github.com/AsherBond/fluent-helm-charts/releases/download/fluent-operator-3.0.0/fluent-operator-3.0.0.tgz
+    version: 3.0.0
+  - apiVersion: v2
     appVersion: 2.9.0
     created: "2024-06-26T07:54:31.675252526Z"
     dependencies:
@@ -5541,4 +5603,4 @@ entries:
     urls:
     - https://github.com/fluent/helm-charts/releases/download/fluentd-0.1.0/fluentd-0.1.0.tgz
     version: 0.1.0
-generated: "2024-06-26T07:54:31.675633759Z"
+generated: "2024-07-10T16:58:21.574211371Z"
