@@ -1,4 +1,4 @@
-# Fluent Operator Helm Chart Changelog
+# Fluent Operator CRDs (Fluent Bit) Helm Chart Changelog
 
 > [!NOTE]
 > All notable changes to this project will be documented in this file; the format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
@@ -23,5 +23,5 @@
 <!--
 RELEASE LINKS
 -->
-[UNRELEASED]: https://github.com/fluent/helm-charts/tree/main/charts/fluent-operator
-[v4.0.0]: https://github.com/fluent/helm-charts/releases/tag/fluent-operator-4.0.0
+[UNRELEASED]: https://github.com/fluent/helm-charts/tree/main/charts/fluent-operator-crds-fluent-bit
+[v4.0.0]: https://github.com/fluent/helm-charts/releases/tag/fluent-operator-crds-fluent-bit-4.0.0
